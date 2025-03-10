@@ -94,3 +94,9 @@ You are required to develop a fully functional **CSAV Food** website using **HTM
 # **DEADLINE**
 ### **DATE** : **MARCH 19, 2025**
 ### **TIME** : **7:30PM**
+
+
+# **RESOURCES**
+[Unsplash](https://unsplash.com/)
+[Pexels](https://www.pexels.com/)
+[Pixabay](https://pixabay.com/)
