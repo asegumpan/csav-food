@@ -17,7 +17,7 @@ You are required to develop a fully functional **CSAV Food** website using **HTM
 ## CSS & Styling (Bootstrap Customization, Animations)
 8️⃣ **Mobile Responsiveness & Grid Adjustments** – *Kei Nikole Filio*  
 9️⃣ **Animations & Hover Effects** (Buttons, Images, Cards) – *John Rey Gasparillo*  
-🔟 **Typography & Color Scheme Customization** (CSS Variables, Google Fonts) – *Joshua Lacsi*  
+🔟 **Typography & Color Scheme Customization** (SCSS Variables, Google Fonts) – *Joshua Lacsi*  
 
 ## JavaScript (Bootstrap Components, Interactivity)
 1️⃣1️⃣ **Order Button Functionality** (Modal Popups for Ordering) – *Iven Loro*  
