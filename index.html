@@ -104,40 +104,86 @@
         <h1>UPCOMING EVENTS</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis neque tempora earum aliquam possimus tenetur eligendi animi quam nam magnam in dolorum, provident accusamus non, id cum repudiandae eos?</p>
     </div>
-    
+
+    <!--Reservation Form UI Catapang-->
     <div class="container mt-5 text-center">
-        <h2>Reservation</h2>
-        <h1>BOOK YOUR TABLE</h1>
-        <form class="row g-3 justify-content-center">
-            <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Name" required>
+        <h2 class="text-uppercase">Reservation</h2>
+        <h1 class="fw-bold">Book Your Table</h1>
+        <p class="text-muted">Reserve a table in advance.</p>
+    
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <form class="row g-3 p-4 shadow rounded bg-light">
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-lg" id="name" placeholder="Full Name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="email" class="form-control form-control-lg" id="email" placeholder="Email Address" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="email" class="form-control form-control-lg" id="email" placeholder="Email Address" required>
+                            <label for="number">Mobile Number</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="date" class="form-control form-control-lg" id="date" required>
+                            <label for="date">Select Date</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="time" class="form-control form-control-lg" id="time" required>
+                            <label for="time">Select Time</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="number" class="form-control form-control-lg" id="people" placeholder="Number of People" required>
+                            <label for="people">Number of Guest</label>
+                        </div>
+                    </div>
+                
+                    <div class="mb-3">
+                        <label class="form-label">Reservation Type</label>
+                        <select class="form-select">
+                            <option>Please Select</option>
+                            <option>Dine-in</option>
+                            <option>Outdoor</option>
+                            <option>Private Room</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">If not listed, please specify</label>
+                        <input type="text" class="form-control" placeholder="Enter details">
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label">Any special requests</label>
+                        <textarea class="form-control" rows="3" placeholder="Enter special requests"></textarea>
+                    </div>
+            
+                    <button type="submit" class="btn btn-success btn-lg w-100">Submit</button>
+                </form>
             </div>
-            <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Email" required>
+                </form>
             </div>
-            <div class="col-md-6">
-                <input type="date" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-                <input type="time" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-                <input type="number" class="form-control" placeholder="Number of People" required>
-            </div>
-            <div class="col-md-6">
-                <button type="submit" class="btn btn-primary w-100">FIND A TABLE</button>
-            </div>
-        </form>
+        </div>
     </div>
     
-    <div class="mt-5"></div>
+    
     
     <footer class="bg-dark text-white text-center py-4">
         <div class="container"><br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ea aspernatur consequatur repellat veritatis et eligendi perferendis, tempora cumque molestias! Maiores cum natus quae? Exercitationem ullam soluta unde reprehenderit eaque.</p>
-            <p>Ullam, beatae culpa! In magni dolor at eaque explicabo libero laborum ipsam beatae deserunt unde iste odit, possimus doloremque. Temporibus eum minus et eaque iste quasi eius aspernatur sit vero.</p>
-            <p>Nemo, qui iste quod aliquid nihil sint numquam cum provident perspiciatis reiciendis dolorum. Esse quod, velit voluptatum facilis dolorem asperiores possimus error reprehenderit ad exercitationem vel molestias, officia nisi reiciendis.</p>
-            <p>Fugit dolorum eligendi recusandae commodi ad quidem iusto sed alias quos, minima dolores, corporis consequuntur esse perspiciatis amet qui possimus provident doloremque quasi? Quaerat, eum? Eius magnam illo expedita sunt!</p>
+            <p>At CSAV Food, we bring you the best flavors with fresh ingredients and quick service. Whether you're dining in or ordering online, we are committed to delivering a delightful experience. Taste the difference with every bite!</p>
 
             <hr class="my-3" style="border-color: rgba(255,255,255,0.3);">
 
