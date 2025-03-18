@@ -296,68 +296,109 @@
             atmosphere that transports you straight to Italy.
         </p>
 
-        <div id="carouselExampleIndicators" class="carousel slide position-relative mx-auto" style="width: 50%">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/imgs/carou-pasta.jpg" class="d-block w-100 img-fluid" alt="..." />
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/carou-pasta2.jpg" class="d-block w-100 img-fluid" alt="..." />
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/imgs/pizza.jpeg" class="d-block w-100 img-fluid" alt="..." />
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+      <!-- updated carousel and added js (sherwin pagalilawan) -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        
         </div>
-    </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <div class="img-wrapper">
+            <img src="assets/imgs/carou-pasta.jpg" class="img-carou" alt="...">
+          </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="img-wrapper">
+            <img src="assets/imgs/pizza.jpeg" class="img-carou" alt="...">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-wrapper">
+            <img src="assets/imgs/carou-pasta2.jpg" class="img-carou" alt="...">
+            </div>
+          </div>
+        </div>
+      
+      </div>
 
     <style>
-        .carousel-inner img {
-            max-height: 400px;
-            object-fit: fill;
-            /*  filter: brightness(0.7); */
-        }
+      .img-wrapper{
+        max-width: 100%;
+        height: 17em;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        filter: brightness(0.3);
+      }
 
-        .container h2 {
-            font-weight: 700;
-        }
+      .img-carou{
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .carousel-item.active .img-wrapper {
+        transform: scale(2); 
+        z-index: 10;
+        filter: brightness(1);
+      }
+@media screen and (min-width:576px) {
+  .carousel-inner{
+    display: flex;
+  }
+
+  .carousel-item{
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+  }
+}
+
+.carousel-inner{
+  padding: 1rem;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -70px;
+  left: 35%;
+  transform: translateX(-50%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; 
+}
+
+
+.carousel-indicators button {
+  width: 12px !important; 
+  height: 12px !important; 
+  border-radius: 50% !important;
+  background-color: gray !important; 
+  border: none !important;
+  margin: 5px !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 0.5;
+  aspect-ratio: 1 / 1; 
+}
+
+.carousel-indicators .active {
+  background-color: #ffe001 !important; 
+  transform: scale(1.3); 
+  opacity: 1 !important;
+}
+
     </style>
 
-    <div class="container mt-5">
-        <div class="row row-cols-2">
-            <div class="col">
-                <img src="assets/imgs/event-pasta.jpg.png" alt="" />
-            </div>
+    <div class="container mt-5 pt-5">
+      <div class="row row-cols-2">
+        <div class="col">
+          <img src="assets/imgs/event-pasta.jpg.png" alt="" />
+        </div>
 
-            <div class="col">
-                <img src="assets/imgs/event-pasta2.png" class="w-75" alt="" />
-            </div>
-            <div class="col m-0 p-0"></div>
+        <div class="col">
+          <img src="assets/imgs/event-pasta2.png" class="mb-2 w-75" alt="" />
+          <img src="assets/imgs/event-pasta3.png" class="mt-4 w-75" alt="" />
 
-            <div class="col">
-                <img src="assets/imgs/event-pasta3.png" class="mt-0 w-75" alt="" />
-
-            </div>
+   
         </div>
     </div>
 
@@ -387,6 +428,7 @@
                         </label>
                         <input type="tel" class="form-control" id="customerPhone" required>
                     </div>
+
 
                     <!-- Order Details -->
                     <h6 class="mb-3">Order Details</h6>
@@ -426,12 +468,51 @@
                 </form>
             </div>
         </div>
+
     </div>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.getElementById("carouselExampleIndicators");
+  const carouselInstance = new bootstrap.Carousel(carousel); 
+  const items = document.querySelectorAll(".carousel-item .img-wrapper");
+
+  function updateCarouselPosition() {
+    items.forEach((item) => {
+      item.style.transform = "scale(0.9)";
+      item.style.opacity = "0.5";
+    });
+
+    const activeItem = document.querySelector(".carousel-item.active .img-wrapper");
+    if (activeItem) {
+      activeItem.style.transform = "scale(1.2)";
+      activeItem.style.opacity = "1";
+    }
+  }
+
+
+  carousel.addEventListener("slid.bs.carousel", function () {
+    updateCarouselPosition();
+  });
+
+ 
+  items.forEach((img, index) => {
+    img.addEventListener("click", function () {
+      carouselInstance.to(index); 
+    });
+  });
+
+ 
+  updateCarouselPosition();
+});
+
+</script>
 
 
 </section>
@@ -571,6 +652,7 @@
                     const targetId = this.getAttribute("href").substring(1);
                     const targetElement = document.getElementById(targetId);
     
+
                     if (targetElement) {
                         const targetPosition = targetElement.offsetTop - navbar.offsetHeight;
                         const startPosition = window.scrollY;
@@ -603,6 +685,7 @@
     
         // End
         </script>
+
   </body>
 </html>
 
