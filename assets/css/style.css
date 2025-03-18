@@ -44,4 +44,120 @@ img:hover {
 }
 .container {
   animation: fadeIn 1s ease-in-out;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.header {
+  background: #fdd835;
+  padding: 20px 0;
+}
+.header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo img {
+  height: 50px;
+  width: auto;
+}
+.header .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.header .nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+.header .nav-links li a:hover {
+  color: black;
+}
+.header .delivery-info {
+  font-weight: bold;
+  color: #000;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: linear-gradient(120deg, #fdd835 60%, #fff 40%);
+}
+.hero-section .hero-text {
+  max-width: 50%;
+}
+.hero-section .hero-text .hungry {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.hero-section .hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+}
+.hero-section .hero-text .order-text {
+  font-size: 1.2rem;
+}
+.hero-section .hero-text .offer {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.hero-section .hero-text .order-btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero-section .hero-text .order-btn:hover {
+  background: black;
+}
+.hero-section .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hero-section .hero-image img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0); /* Slight transparency */
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6); /* Slight transparency */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.card-img-top {
+  width: 100%; /* Ensures responsiveness */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures images keep aspect ratio and fill the area */
+  border-radius: 8px; /* Optional for rounded corners */
 }/*# sourceMappingURL=style.css.map */
