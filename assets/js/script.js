@@ -77,3 +77,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateCarouselPosition();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const menuItems = document.querySelectorAll(".menu-item");
+
+
+    filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+            const category = this.getAttribute("data-category");
+
+
+            // Show or hide menu items based on category
+            menuItems.forEach((item) => {
+                if (category === "all" || item.getAttribute("data-category") === category) {
+                    item.style.display = "block"; // Show item
+                } else {
+                    item.style.display = "none"; // Hide item
+                }
+            });
+
+
+            // Update active button style
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+});

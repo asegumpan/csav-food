@@ -93,11 +93,17 @@
       <p class="text-center">
         Choose our food for its unbeatable freshness, rich flavors, and high-quality ingredients. Every bite is crafted with care to deliver a delicious and satisfying experience. Taste the difference today!
       </p>
-
+      <div class="text-center mb-4">
+        <span class="fw-bold">Category:</span>
+        <button class="btn btn-outline-primary filter-btn" data-category="all">All</button>
+        <button class="btn btn-outline-primary filter-btn" data-category="burger">Burger</button>
+        <button class="btn btn-outline-primary filter-btn" data-category="pizza">Pizza</button>
+        <button class="btn btn-outline-primary filter-btn" data-category="pasta">Pasta</button>
+    </div>
   <!-- Cards Section Bingua -->
   <div class="container mt-5">
-    <div class="row">
-        <div class="col-md-4 mb-4">
+    <div class="row d-flex justify-content-center" id="menuContainer">
+        <div class="col-md-4 mb-4 menu-item" data-category="burger">
             <div class="card text-center border-0 square-card"> <!-- Removed border -->
                 <img src="assets/imgs/burger1.jpg" class="card-img-top" alt="Food 1" />
                 <div class="card-body">
@@ -109,8 +115,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card text-center border-0 square-card"> <!-- Removed border -->
+        <div class="col-md-4 mb-4 menu-item" data-category="pizza">
+          <div class="card text-center border-0 square-card"> <!-- Removed border -->
                 <img src="assets/imgs/pizza1.jpg" class="card-img-top" alt="Food 2" />
                 <div class="card-body">
                     <h5 class="card-title">Cheesy Pizza</h5>
@@ -121,8 +127,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card text-center border-0 square-card"> <!-- Removed border -->
+        <div class="col-md-4 mb-4 menu-item" data-category="pasta">
+          <div class="card text-center border-0 square-card"> <!-- Removed border -->
                 <img src="assets/imgs/pasta1.jpg" class="card-img-top" alt="Food 3" />
                 <div class="card-body">
                     <h5 class="card-title">Tasty Pasta</h5>
