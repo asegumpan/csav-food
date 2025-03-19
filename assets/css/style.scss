@@ -2,8 +2,11 @@
 // button animations and hover effects
 .btn-primary {
     background-color: #ffe001 !important;
+    border: none;
+    border-radius: 0 !important;
     border-color: #d4b800 !important;
     color: #000 !important;
+    font-weight: bold;
     transition: all 0.3s ease-in-out;
 
     &:hover {

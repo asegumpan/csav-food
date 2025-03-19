@@ -1,7 +1,10 @@
 .btn-primary {
   background-color: #ffe001 !important;
+  border: none;
+  border-radius: 0 !important;
   border-color: #d4b800 !important;
   color: #000 !important;
+  font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
 .btn-primary:hover {
@@ -157,7 +160,8 @@ body {
 .card-img-top {
   width: 100%; /* Ensures responsiveness */
   height: 200px; /* Set a fixed height */
-  object-fit: cover; /* Ensures images keep aspect ratio and fill the area */
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensures images keep aspect ratio and fill the area */
   border-radius: 8px; /* Optional for rounded corners */
 }
 
