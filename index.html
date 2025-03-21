@@ -212,17 +212,25 @@
           </div>
         </div>
       </div>
-
-    <div class="container mt-5 pt-5">
-      <div class="row row-cols-2">
-        <div class="col">
-          <img src="assets/imgs/event-pasta.jpg.png" alt="" />
-        </div>
-        <div class="col">
-          <img src="assets/imgs/event-pasta2.png" class="mb-2 w-75" alt="" />
-          <img src="assets/imgs/event-pasta3.png" class="mt-4 w-75" alt="" />
-        </div>
+<!--fix grid for mobile (noel caceres)-->
+<div class="container mt-5 pt-5">
+  <div class="row">
+    <div class="col-md-6 mb-2 mb-lg-0">
+      <img src="assets/imgs/event-pasta.jpg.png" alt="Most Popular Pasta" class="img-fluid w-90 h-100" style="object-fit: fit;" />
     </div>
+    <div class="col-md-6 d-flex flex-column">
+      <div class="mb-2 flex-fill">
+        <img src="assets/imgs/event-pasta2.png" alt="More Fun More Taste" class="img-fluid w-80 h-100 " style="object-fit: cover;" />
+      </div>
+      <div class="flex-fill">
+        <img src="assets/imgs/event-pasta3.png" alt="Fresh & Chili" class="img-fluid w-80 h-80" style="object-fit: cover;" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
    <!-- Iven Loro Modal for Order Buttons -->
    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
     <div class="modal-dialog">
