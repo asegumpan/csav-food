@@ -104,3 +104,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const today = new Date();
+  
+  // Format the date as YYYY-MM-DD
+  const formattedDate = today.toISOString().split("T")[0];
+  document.getElementById("reservationDate").value = formattedDate;
+
+  // Format the time as HH:MM (24-hour format)
+  const formattedTime = today.toTimeString().slice(0, 5);
+  document.getElementById("reservationTime").value = formattedTime;
+});
